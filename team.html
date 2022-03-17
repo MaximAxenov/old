@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<section class="first container">
+        <div class="greetings_ser">
+		    <h1 class="first__title_sub">OldShop</h1>
+            <nav class="navigation">
+                <a class="list" href="home.html">Home</a>
+                <a class="list" href="services.html">Services</a>
+                <a class="list" href="team.html">Team</a>
+                <a class="list" href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="list_team">
+            <div  class="item_block">
+                <img class="img_team" src="img/barber1.png" alt="">
+                <h2 class="item_name">Thomas Smit</h2>
+                <p class="text_team">Barber with 15 years of experience! Thomas is not just an excellent master, but also a good conversationalist! You will communicate on any topic (except for your hairstyle), he himself knows how it will be better! In his "magic" hands, the scissors perform some kind of "intricate dance".</p>
+            </div>
+            <div class="item_block">
+                <img class="img_team" src="img/barber2.png" alt="">
+                <h2 class="item_name">Fred Miller</h2>
+                <p class="text_team">If you just want to enjoy the haircut and the result, do your hair quickly and without unnecessary words, Fred is for you! Scissors, combs and cars in his hands just "play"! But most importantly of course the hands! Watching him work is a pleasure! And to be at the same time in his chair - it's just fantastic!</p>
+            </div>
+            <div  class="item_block">
+                <img class="img_team" src="img/barber3.png" alt="">
+                <h2 class="item_name">Brandon Johnson</h2>
+                <p class="text_team">Top notch barber! Sitting in his chair, you can be sure the hairstyle or beard will be just great. Brandon will take into account all your wishes! He will be able to make all your dreams come true and make your stay at OldShop unforgettable! You will definitely return to it!</p>
+            </div>
+        </div>
+		<video autoplay muted loop id="myVideo">
+            <source src="video.mp4" type="video/mp4" playsinline muted autoplay loop class="first__video">
+        </video>
+        <div class="content">
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+        <script>
+            // Get the video
+            var video = document.getElementById("myVideo");
+            
+            // Get the button
+            var btn = document.getElementById("myBtn");
+            
+            // Pause and play the video, and change the button text
+            function myFunction() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                }
+            }
+            </script>
+    </section>
+</body>
+</html>

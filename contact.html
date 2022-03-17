@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<section class="first container">
+        <div class="greetings_ser">
+		    <h1 class="first__title_sub">OldShop</h1>
+            <nav class="navigation">
+                <a class="list" href="home.html">Home</a>
+                <a class="list" href="services.html">Services</a>
+                <a class="list" href="team.html">Team</a>
+                <a class="list" href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="contact_block">
+            <h3 class="contact_titel">CONTACTS</h3>
+            <p class="contact_text">We are waiting for you every day
+                    without breaks and days off!</p>
+            <a class="contact_tel" href="">+1 (833) 853-85-85</a>
+            <p class="contact_text">369 N Fairfax Ave Unit A, Los Angeles, CA 90036</p>
+            <div class="block_schedule">
+                <p class="contact_text">Daily</p>
+                <p class="contact_text_p">from 10:00 to 21:00</p>
+            </div>
+        </div>
+        <div class="navigation_social">
+            <a class="list_social" href="#Instagram">Instagram</a>
+            <a class="list_social" href="#Facebook">Facebook</a>
+            <a class="list_social" href="#Pinterest">Pinterest</a>
+            <a class="list_social" href="#YouTube">YouTube</a>
+        </div>
+		<video autoplay muted loop id="myVideo">
+            <source src="video.mp4" type="video/mp4" playsinline muted autoplay loop class="first__video">
+        </video>
+        <div class="content">
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+        <script>
+            // Get the video
+            var video = document.getElementById("myVideo");
+            
+            // Get the button
+            var btn = document.getElementById("myBtn");
+            
+            // Pause and play the video, and change the button text
+            function myFunction() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                }
+            }
+            </script>
+    </section>
+</body>
+</html>
